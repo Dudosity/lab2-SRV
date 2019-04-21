@@ -1,0 +1,28 @@
+
+<div class="container">
+  <button type="button" style="alignment: center" (click)="row1()" class="btn btn-primary">Go</button>
+  <div class="row border shadow" >
+    <div class="col-2">
+      <h4>flow1</h4>
+      <h4>flow2</h4>
+      <h4>flow3</h4>
+      <h4>flow4</h4>
+      <h4>flow5</h4>
+      <h4>flow6</h4>
+      <h4>flow7</h4>
+      <h4>flow8</h4>
+
+    </div>
+    <div class="col-10 border">
+    <div class="item border" [ngStyle]="{width: weight[1]+'px', marginLeft: paddings[1]+'px'  }"  style="background-color: aqua"><h4 *ngIf="visibility1" style="text-align: right">2,3</h4></div>
+    <div class="item border" [ngStyle]="{width: weight[2]+'px', marginLeft: paddings[2]+'px'  }"  style="background-color: fuchsia"><h4 *ngIf="visibility2" style="text-align: right">5,7</h4></div>
+    <div class="item border" [ngStyle]="{width: weight[3]+'px', marginLeft: paddings[3]+'px'  }"   style="background-color: red"><h4 *ngIf="visibility3" style="text-align: right">6</h4></div>
+    <div class="item border" [ngStyle]="{width: weight[4]+'px', marginLeft: paddings[4]+'px'  }"   style="background-color: #3cff22"><h4 *ngIf="visibility4" style="text-align: right"></h4></div>
+    <div class="item border" [ngStyle]="{width: weight[5]+'px', marginLeft: paddings[5]+'px'  }"  style="background-color: #ffa328"><h4 *ngIf="visibility5" style="text-align: right">8</h4></div>
+    <div class="item border" [ngStyle]="{width: weight[6]+'px', marginLeft: paddings[6]+'px'  }"   style="background-color: #39ff8f"><h4 *ngIf="visibility6" style="text-align: right">4</h4></div>
+    <div class="item border" [ngStyle]="{width: weight[7]+'px', marginLeft: paddings[7]+'px'  }"   style="background-color: #ff5c88"><h4 *ngIf="visibility7" style="text-align: right"></h4></div>
+    <div class="item border" [ngStyle]="{width: weight[8]+'px', marginLeft: paddings[8]+'px'   }"   style="background-color: #2c9dff"><h4 *ngIf="visibility8" style="text-align: right"></h4></div>
+    </div>
+  </div>
+
+</div>
